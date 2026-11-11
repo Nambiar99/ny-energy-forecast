@@ -1,0 +1,125 @@
+.master-container{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: arial;
+}
+.titlebar-title{
+	color: #FF5A1F;
+	font-weight: bold;
+	font-size: large;
+}
+.sidebar-container{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	width: 200px;
+	flex-shrink: 0;
+	height: 100vh;
+	background-color: #121417;
+}
+.sidebar-title{
+	color: #D9DCE1;
+	font-weight: bold;
+}
+.page-container{
+	flex-grow: 1;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: linear-gradient(90deg, #2d3239, #121417);
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.main-page-container{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.first-row-container{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.weather-first-row-container{
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.page-title{
+	color: #D9DCE1;
+	font-weight: lighter;
+}
+
+.sidebar-pill{
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: 8px;
+	border-radius: 10px;
+	color: #c3c1e2;
+	transition: all 0.2s ease-in-out;
+}
+.sidebar-pill:not(.active):hover{
+	background-color: rgba(255, 255, 255, 0.08);
+	color: #ffffff;
+}	
+.sidebar-pill.active{
+	background-color: #FF5A1F;
+	color: #ffffff;
+	font-weight: 600;
+}
+.graph-container{
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
+	padding: 20px;
+	width: 80vw;
+	height: 60vh;
+}
+.weather-graph-container{
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
+	padding: 20px;
+	width: 40vw;
+	height: 40vh;
+}
+.menubar-container input[type="checkbox"]{
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
+	padding: 20px;
+	accent-color: #FF5A1F;
+}
+.menubar-options{
+	color: #ffffff;
+}
+.card-container{
+	display: grid;
+  	place-items: center;
+	width: 25vw;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
+}
+.card-title{
+	color: #ffffff;
+	font-weight: bolder;
+}
+.card-value{
+	color: #ffffff;
+	font-weight: lighter;
+}
