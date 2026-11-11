@@ -7,7 +7,7 @@ An end-to-end data science project for analyzing and forecasting electricity dem
 **Forecast Horizon**: 24 hours ahead\
 **Primary Target**: Electricity Demand (MW)
 
-**Live Dashboard**: [Dashboard Link](https://ny-energy-forecast-276745421099.europe-west1.run.app/)
+**Live Dashboard**: [Dashboard Link](https://ny-energy-forecast-276745421099.europe-west1.run.app/)\
 ***Wait for sometime for cold start***
 
 ![Dashboard](/results/dash/dashboard.png)
