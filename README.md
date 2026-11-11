@@ -47,9 +47,9 @@ The goal is to build a transparent, reproducible forecasting application rather 
 * Analyze hourly electricity demand and identify temporal patterns.
 * Investigate relationships between demand, temperature, and other available weather variables.
 * Establish simple forecasting baselines before evaluating more complex models.
-* Develop a PyTorch LSTM model for one-hour-ahead demand forecasting.
+* Develop an LSTM model for one-hour-ahead demand forecasting.
 * Evaluate whether weather features improve predictive performance.
-* Explore recursive forecasting for generating predictions beyond the next hour.
+* Explore forecasting models for generating predictions beyond the next hour.
 * Present historical demand, forecasts, and model evaluation metrics through an interactive dashboard.
 * Develop a reusable inference workflow suitable for deployment.
 
@@ -94,7 +94,7 @@ Weather variables collected for this project include:
 The weather dataset is aligned with the electricity dataset using timestamps. The resulting dataset is used to investigate whether weather conditions provide additional predictive information.
 
 **Weather location**: New York City\
-**Historical period**: ```2022-01-01``` to ```2025-12-31```
+**Historical period**: ```2022-01-01``` to ```2026-11-01```
 
 Historical weather data can be based on reanalysis or weather-model estimates rather than direct measurements at the exact location. The selected dataset and its limitations should therefore be considered when interpreting results.
 
@@ -189,7 +189,7 @@ The forecasting dataset combines the selected electricity target with the featur
 | ------------- | -------- | ------- |
 | Temporal | Hour, weekday, month | Capture recurring time patterns |
 | Lagged Demand | Previous-hour demand, demand 24 hours earlier | Capture short-term dependence and daily seasonality |
-| Rolling statistics | Rooling mean and standard deviation | Describe recent demand behaviour |
+| Rolling statistics | Rolling mean and standard deviation | Describe recent demand behaviour |
 | Weather | Temperature, humidity, precipitation | Investigate weather-related demand variation |
 
 ## Forecasting Models
@@ -310,7 +310,6 @@ python app.py
 * Historical weather estimates may differ from observations at the exact location represented by the energy data.
 * Regional energy data and point-based weather data have different spatial coverage.
 * Model performance may vary across seasons, holidays, and unusual demand conditions.
-* Recursive forecasts can accumulate errors over longer horizons.
 * Future weather variables must be available as forecasts or estimated separately for operational predictions.
 * Reported model accuracy applies to the selected dataset and test period; it does not guarantee future performance.
 
@@ -327,6 +326,6 @@ python app.py
 
 ***
 
-**Built with Python, Keras, Sci-kit Learn, Plotly, Dash and Pandas**
+**Built with Python, Keras, Scikit, Plotly, Dash and Pandas**
 
 
