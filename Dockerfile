@@ -6,7 +6,8 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY dashboard/ .
+COPY dashboard/ ./dashboard/
+COPY models/ ./models/
 
 ENV PYTHONUNBUFFERED=1
 
