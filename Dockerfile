@@ -1,6 +1,6 @@
-FROM python:3.14
+FROM python:3.13-slim
 
-WORKDIR /dashboard/app
+WORKDIR /app
 
 COPY requirements.txt .
 
@@ -11,4 +11,4 @@ COPY models/ ./models/
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["sh", "-c", "gunicorn --chdir /dashboard/app --bind 0.0.0.0:${PORT:-8080} --workers 1 --threads 8 --timeout 120 app:server"]
+CMD ["sh", "-c", "gunicorn --chdir /app/dashboard --bind 0.0.0.0:${PORT:-8080} --workers 1 --threads 8 --timeout 120 app:server"]
