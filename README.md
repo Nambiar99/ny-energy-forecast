@@ -8,7 +8,7 @@ An end-to-end data science project for analyzing and forecasting electricity dem
 **Primary Target**: Electricity Demand (MW)
 
 **Live Dashboard**: [Dashboard Link](https://forecast-app-276745421099.europe-west1.run.app/)\
-*Wait for sometime for cold start*
+*Wait few minutes for cold start*
 
 ![Dashboard](/results/dash/dashboard.png)
 
